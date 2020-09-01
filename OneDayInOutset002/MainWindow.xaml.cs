@@ -27,13 +27,20 @@ namespace OneDayInOutset002
             InitializeComponent();
             DataContext = run;
         }
+        void Completed(object sender, EventArgs e)
+        {
+            Continue.Text = "Click to continue...";
+        }
         void ButtonClick(object sender, RoutedEventArgs e)
         {
+            Continue.Text = "";
             game.Typewriter(run.Loc0.desc, MainText, time);
+            game.story.Completed += new EventHandler(Completed);
+            game.story.Begin(MainText, true);
         }
         void Skip(object sender, RoutedEventArgs e)
         {
-            game.story.SkipToFill();
+            game.story.SkipToFill(MainText);
         }
     }
 }

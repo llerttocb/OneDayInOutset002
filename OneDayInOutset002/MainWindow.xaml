@@ -29,14 +29,23 @@
             >
         </Button>
         <Button
-            Name="Button2"
+            Name="ButtonSkip"
             Height="40"
             Width="100"
             Background="Gray"
-            Margin="150,359,542,20"
+            Margin="145,360,547,19"
             Click="Skip"
             Content="Skip"
             >
         </Button>
+        <TextBlock
+            Name="Continue"
+            Height="40"
+            Width="400"
+            Margin="372,360,20,19"
+            Foreground="White"
+            >
+            
+        </TextBlock>
     </Grid>
 </Window>

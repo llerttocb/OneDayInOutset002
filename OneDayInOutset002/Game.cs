@@ -37,7 +37,6 @@ namespace OneDayInOutset002
             Storyboard.SetTargetName(stringAnimationUsingKeyFrames, block.Name);
             Storyboard.SetTargetProperty(stringAnimationUsingKeyFrames, new PropertyPath(TextBlock.TextProperty));
             story.Children.Add(stringAnimationUsingKeyFrames);
-            story.Begin(block);
         }
     }
 }
