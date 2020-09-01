@@ -9,7 +9,7 @@ namespace OneDayInOutset002
     public class LocInfo
     {
         public const string Loc0Name = "Start";
-        public const string Loc0Desc = "Desc.";
+        public const string Loc0Desc = "Shortly after the end of the Great War, rifts opened around the world.\nThe rifts are small, stable connections leading to a wholly new world, rife with potential for exploration and exploitation.\nThe Manifest Destiny Trading Company was chartered to manage the administration, industry, and hordes of adventurers,\nthat poured through the rift in pursuit of the new frontier.";
         //
         public const string Loc1Name = "Train";
         public const string Loc1Desc = "Train";

@@ -9,7 +9,18 @@ namespace OneDayInOutset002
     public class CreateLoc
     {
         public World world;
-        public Loc Loc0, Loc1, Loc2, Loc3, Loc4, Loc5, Loc6, Loc7, Loc8, Loc9, Loc10, Loc11;
+        public Loc Loc0 { get; set; }
+        public Loc Loc1 { get; set; }
+        public Loc Loc2 { get; set; }
+        public Loc Loc3 { get; set; }
+        public Loc Loc4 { get; set; }
+        public Loc Loc5 { get; set; }
+        public Loc Loc6 { get; set; }
+        public Loc Loc7 { get; set; }
+        public Loc Loc8 { get; set; }
+        public Loc Loc9 { get; set; }
+        public Loc Loc10 { get; set; }
+        public Loc Loc11 { get; set; }
         public void LocConnect(Loc loc, Loc con)
         {
             loc.locconnect.Add(con);

@@ -60,6 +60,7 @@
     <Compile Include="CreateLoc.cs" />
     <Compile Include="Loc.cs" />
     <Compile Include="LocInfo.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="World.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

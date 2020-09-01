@@ -9,21 +9,31 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace OneDayInOutset002
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
+        CreateLoc run = new CreateLoc();
+        Game game = new Game();
+        TimeSpan time = new TimeSpan(0, 0, 8);
         public MainWindow()
         {
-            CreateLoc run = new CreateLoc();
-            run.Loc0 = new Loc(name = LocInfo.Loc0Name, desc = LocInfo.Loc0Desc);
-            //run.Startup();
+            run.Startup();
             InitializeComponent();
-            DataContext = run.Loc0;
+            DataContext = run;
+        }
+        void ButtonClick(object sender, RoutedEventArgs e)
+        {
+            game.Typewriter(run.Loc0.desc, MainText, time);
+        }
+        void Skip(object sender, RoutedEventArgs e)
+        {
+            game.story.SkipToFill();
         }
     }
 }
