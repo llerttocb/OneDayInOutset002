@@ -5,12 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OneDayInOutset002"
         mc:Ignorable="d"
+        x:Name="Main"
         Title="One Day in Outset"
         Height="450"
         Width="800"
         Background="Black"
+        MouseLeftButtonUp="Skip"
         >
     <Grid>
+        <Button
+            Name="Opt1"
+            Width="500"
+            Height="25"
+            Visibility="Hidden"
+            Margin="20,165,272,229"
+            Background="Gray"
+            >
+        </Button>
+        <Button
+            Name="Opt2"
+            Width="500"
+            Height="25"
+            Visibility="Hidden"
+            Margin="20,195,272,199"
+            Background="Gray"
+            >
+        </Button>
+        <Button
+            Name="Opt3"
+            Width="500"
+            Height="25"
+            Visibility="Hidden"
+            Margin="20,225,272,169"
+            Background="Gray"
+            >
+        </Button>
+        <Button
+            Name="Opt4"
+            Width="500"
+            Height="25"
+            Visibility="Hidden"
+            Margin="20,255,272,139"
+            Background="Gray"
+            >
+        </Button>
+        <Button
+            Name="Opt5"
+            Width="500"
+            Height="25"
+            Visibility="Hidden"
+            Margin="20,285,272,109"
+            Background="Gray"
+            >
+        </Button>
+        <Button
+            Name="Opt6"
+            Width="500"
+            Height="25"
+            Visibility="Hidden"
+            Margin="20,315,272,79"
+            Background="Gray"
+            >
+        </Button>
         <TextBlock
             Name="MainText"
             FontSize="12"
@@ -19,25 +75,6 @@
             Margin="20,20,20,79"
             >
         </TextBlock>
-        <Button
-            Name="Button1"
-            Height="40"
-            Width="100"
-            Background="Gray"
-            Margin="20,359,672,20"
-            Click="ButtonClick"
-            >
-        </Button>
-        <Button
-            Name="ButtonSkip"
-            Height="40"
-            Width="100"
-            Background="Gray"
-            Margin="145,360,547,19"
-            Click="Skip"
-            Content="Skip"
-            >
-        </Button>
         <TextBlock
             Name="Continue"
             Height="40"

@@ -57,7 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Cho.cs" />
     <Compile Include="ChoInfo.cs" />
-    <Compile Include="CreateLoc.cs" />
+    <Compile Include="Construct.cs" />
     <Compile Include="Loc.cs" />
     <Compile Include="LocInfo.cs" />
     <Compile Include="Game.cs" />
